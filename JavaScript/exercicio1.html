@@ -10,7 +10,18 @@
 
 <body>
     <script>
-        
+        /*
+        1. Faça um algoritmo para ler 20 números e armazenar em um array. Após a leitura total dos 20 números, o algoritmo deve escrever esse array.
+        */
+
+        var lista_numeros = [];
+
+        for (var i = 0; i < 20; i++) {
+            var num01 = Number(prompt("Me informe um numero: "));
+            lista_numeros.push(num01);
+        }
+
+        alert("Os elementos do array são:\n" + lista_numeros);
     </script>
 </body>
 

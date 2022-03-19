@@ -10,9 +10,40 @@
 
 <body>
     <script>
-        ["Anel invisibilidade", "Botas magicas", "Botas magicas", "Poção de sono", "Poção de Inocencia"]
-        ["Capa de insibilidade", "Pedra de despertar", "Varinha das varinhas", "Uma poção de Inocência", "Poção de mentira", "Poção de mentira", "Pocão anti-inteligencia"]
+        // Inventario Inicial
+        var drofo = ["Anel de invisibilidade", "Botas Magicas", "Botas Magicas", "Poção de sono", "Poção de Inocência", "Poção de Inocência"];
 
+        var torper = ["Capa de invisibilidade", "Pedra de despertar", "Varinha das varinhas", "Poção de Inocência", "Poção de mentira", "Poção de mentira", "Poção anti-inteligência"];
+
+        //Torper consumio poção de mentira
+        torper.splice(5, 1);
+        // var torper = ["Capa de invisibilidade", "Pedra de despertar", "Varinha das varinhas", "Poção de Inocência", "Poção de mentira", "Poção anti-inteligência"];
+
+        //Torper perdeu sua pedra
+        //Ganhou par de botas magicas de drofo
+        torper.splice(1, 1);
+        drofo.splice(1, 1);
+        torper.push("Botas Magicas");
+        drofo.push("Escudo mágico", "Espada mágica");
+
+        // var torper = ["Capa de invisibilidade", "Varinha das varinhas", "Poção de Inocência", "Poção de mentira", "Poção anti-inteligência", "Botas Magicas"];
+
+        // var drofo = ["Anel de invisibilidade", "Botas Magicas", "Poção de sono", "Poção de Inocência", "Poção de Inocência", "Escudo magico", "Espada magica"];
+
+        //Drofo ganhou mais uma bota magica, usou a sua poção de sono e sua poção de anti-inteligência do Torper
+        drofo.push("Botas Magicas");
+        drofo.splice(2, 1);
+        torper.splice(4, 1);
+
+        // var torper = ["Capa de invisibilidade", "Varinha das varinhas", "Poção de Inocência", "Poção de mentira", "Botas Magicas"];
+
+        // var drofo = ["Anel de invisibilidade", "Botas Magicas", "Poção de Inocência", "Poção de Inocência", "Escudo magico", "Espada magica", "Botas Magicas"];
+
+        //Encontrou um ovo de dragão e uma coxinha
+        drofo.push("Ovo de dragão", "Coxinha");
+
+        document.writeln(drofo);
+        document.writeln(torper);
 
     </script>
 </body>
